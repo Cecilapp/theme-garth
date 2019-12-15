@@ -1,5 +1,5 @@
 # Files to exclude when creating archive
-.*!config.yml export-ignore
+.* export-ignore
 docs/ export-ignore
 
 # Auto detect text files and perform LF normalization
