@@ -14,7 +14,7 @@ composer require cecil/theme-garth
 
 ### Manually
 
-1. download the source code of the lastest [release](https://github.com/Cecilapp/garth-hyde/releases)
+1. download the source code of the lastest [release](https://github.com/Cecilapp/theme-garth/releases)
 2. create a `themes/garth` directory at the root of your projet
 3. copy downloaded files in this directory
 
