@@ -1,1 +1,3 @@
 logo: logo.svg
+pagination:
+  max: 2
