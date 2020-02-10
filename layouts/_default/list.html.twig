@@ -10,20 +10,20 @@
 
 {% block content %}
         <section>
-        <header class="typeset">
-          <h1>{{ page.title }}</h1>
-          {{ page.content }}
-        </header>
-        <ul class="list list--pages">
+          <header class="typeset">
+            <h1>{{ page.title }}</h1>
+            {{- page.content ~}}
+          </header>
+          <ul class="list list--pages">
 {% for p in pages %}
-          <li class="item item--page">
-            <article class="page typeset">
-              <h2><a href="{{ url(p) }}">{{ p.title }}</a></h2>
-              {{ p.content|excerptHtml }}
-            </article>
-          </li>
+            <li class="item item--page">
+              <article class="page typeset">
+                <h2><a href="{{ url(p) }}">{{ p.title }}</a></h2>
+                {{ p.content|excerptHtml }}
+              </article>
+            </li>
 {% endfor %}
-        </ul>
+          </ul>
 {% include 'partials/pagination.html.twig' %}
         </section>
 {% endblock content %}
