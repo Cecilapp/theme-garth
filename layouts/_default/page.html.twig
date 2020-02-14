@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.language|default('en') }}">
   <head>
+{% block head %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
 {% include 'partials/metatags.html.twig' %}
     <link rel="stylesheet" href="{{ url(minify(toCSS('styles.scss'))) }}">
@@ -9,6 +10,7 @@
 {% else %}
     <link rel="shortcut icon" href="{{ url(site.logo|default('')) }}">
 {% endif %}
+{% endblock head %}
   </head>
   <body>
 {% include 'partials/site-header.html.twig' %}
@@ -23,6 +25,6 @@
       </div>
     </main>
 {% include 'partials/site-footer.html.twig' %}
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Neuton:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Neuton:400,700&display=swap" rel="stylesheet">
   </body>
 </html>
