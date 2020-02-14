@@ -6,22 +6,17 @@
 
 ## Installation
 
-### Through Composer
-
 ```bash
 composer require cecil/theme-garth
 ```
 
-### Manually
-
-1. download the source code of the lastest [release](https://github.com/Cecilapp/theme-garth/releases)
-2. create a `themes/garth` directory at the root of your projet
-3. copy downloaded files in this directory
+> Or [download the latest archive](https://github.com/Cecilapp/theme-garth/releases/latest/) and uncompress its content in `themes/garth`.
 
 ## Usage
 
-Add the following line in your `config.yml` file:
+Add `garth` in the `themes` section of your `config.yml`:
 
 ```yaml
-theme: garth
+theme:
+  - garth
 ```
