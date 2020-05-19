@@ -12,7 +12,7 @@
               <article class="article typeset">
                 <h2><a href="{{ url(p) }}">{{ p.title }}</a></h2>
 {% include 'partials/post-meta.html.twig' with {'post': p} only %}
-                {{ p.content|excerptHtml }}
+                {{ p.content|excerpt_html }}
               </article>
             </li>
 {% endfor %}

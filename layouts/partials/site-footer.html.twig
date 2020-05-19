@@ -1,9 +1,9 @@
 {% if site.menus.footer is defined %}
-{% set menu %}{% spaceless %}
-{% for item in site.menus.footer|sortByWeight %}
+{% set menu %}{% apply spaceless %}
+{% for item in site.menus.footer|sort_by_weight %}
 &nbsp;·&nbsp;<a href="{{ url(item.url) }}">{{ item.name }}</a>
 {% endfor %}
-{% endspaceless %}{% endset %}
+{% endapply %}{% endset %}
 {% endif %}
     <footer class="footer">
       <div class="container">
