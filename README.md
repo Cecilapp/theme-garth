@@ -20,3 +20,9 @@ Add `garth` in the `themes` section of your `config.yml`:
 theme:
   - garth
 ```
+
+### Change colors
+
+1. Copy `themes/garth/static/sass/garth.scss` to `static/sass/garth.scss`
+2. Copy `themes/garth/static/sass/_colors.scss` to `static/sass/_colors.scss`
+3. Edit colors's code in `_colors.scss`
