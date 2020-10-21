@@ -1,6 +1,6 @@
 # Garth theme
 
-[Garth](https://github.com/daviddarnes/garth) theme for [Cecil](https://cecil.app).
+> The _Garth_ theme for [Cecil](https://cecil.app) is a port the [Garth](https://github.com/daviddarnes/garth) theme for Jekyll created by [David Darnes](https://github.com/daviddarnes).
 
 ![Demo screenshot](https://raw.githubusercontent.com/daviddarnes/garth/master/screenshot.png)
 
@@ -14,7 +14,7 @@ composer require cecil/theme-garth
 
 ## Usage
 
-Add `garth` in the `themes` section of your `config.yml`:
+Add `garth` in the `theme` section of your `config.yml`:
 
 ```yaml
 theme:
