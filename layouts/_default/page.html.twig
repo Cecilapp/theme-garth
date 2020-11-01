@@ -3,7 +3,7 @@
   <head>
 {% block head %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-{% include 'partials/metatags.html.twig' %}
+    {%~ include 'partials/metatags.html.twig' ~%}
     <link rel="stylesheet" href="{{ asset('sass/garth.scss')|minify|url }}">
 {% if site.favicon|default(false) %}
     <link rel="shortcut icon" href="{{ url(site.favicon) }}">
