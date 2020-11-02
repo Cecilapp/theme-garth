@@ -7,16 +7,16 @@
             {{ page.content }}
           </header>
           <ul class="list list--pages">
-{% for p in pages %}
+            {%- for p in pages ~%}
             <li class="item item--page">
               <article class="article typeset">
                 <h2><a href="{{ url(p) }}">{{ p.title }}</a></h2>
-{% include 'partials/post-meta.html.twig' with {'post': p} only %}
+                {%- include 'partials/post-meta.html.twig' with {'post': p} only ~%}
                 {{ p.content|excerpt_html }}
               </article>
             </li>
-{% endfor %}
+            {%- endfor ~%}
           </ul>
-{% include 'partials/pagination.html.twig' %}
+          {%- include 'partials/pagination.html.twig' ~%}
         </section>
 {% endblock content %}
