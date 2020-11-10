@@ -8,7 +8,7 @@
     <footer class="footer">
       <div class="container">
         <div class="copyright typeset">
-          <small class="small">&copy; {{ site.title }} {{ site.time|date('Y') }}{% if menu is defined %}{{ menu }}{% endif %}</small>
+          <small class="small">&copy; {{ site.copyright|default(site.title) }} {{ site.time|date('Y') }}&nbsp;·&nbsp;Powered by <a href="{{ cecil.url }}">Cecil</a>{% if menu is defined %}{{ menu }}{% endif %}</small>
         </div>
       </div>
     </footer>
