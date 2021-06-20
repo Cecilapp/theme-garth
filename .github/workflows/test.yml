@@ -1,0 +1,22 @@
+name: Test
+
+on: push
+
+jobs:
+  test-theme:
+    name: Test theme
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Download Cecil
+      run: curl -sSOL https://cecil.app/cecil.phar
+
+    - uses: actions/checkout@master
+      path: 'themes/garth'
+
+    - name: Add theme
+      run: echo -e "theme:\n  - garth" >> config.yml
+
+    - name: Build demo
+      run: |
+        php cecil.phar new:site demo
+        php cecil.phar build demo
