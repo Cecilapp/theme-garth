@@ -23,6 +23,19 @@ theme:
 
 ### Change colors
 
+### From configuration
+
+```yaml
+assets:
+  compile:
+    variables:
+      bodyColour: '#5a5a5a'
+      linkColour: '#7E4EA3'
+      backgroundColour: '#F1F3F4'
+```
+
+### From files
+
 1. Copy `themes/garth/static/sass/garth.scss` to `static/sass/garth.scss`
 2. Copy `themes/garth/static/sass/_colors.scss` to `static/sass/_colors.scss`
 3. Edit colors's code in `_colors.scss`
