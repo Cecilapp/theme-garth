@@ -12,13 +12,15 @@ jobs:
 
     - name: Create demo site
       run: php cecil.phar new:site demo
-      
+
     - uses: actions/checkout@master
       with:
         path: 'demo/themes/garth'
-    
+
     - name: Add theme
-      run: echo -e "theme:\n  - garth" >> demo/config.yml
+      run: |
+        echo -e "theme:\n  - garth" >> demo/config.yml
+        cat demo/config.yml
 
     - name: Build demo
       run: php cecil.phar build -vv demo
