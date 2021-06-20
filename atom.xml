@@ -5,7 +5,7 @@
   <subtitle><![CDATA[Cecil is a CLI application that merges plain text files (written in Markdown), images and Twig templates to generate a static website.]]></subtitle>
   <link href="https://cecil.local/atom.xml" rel="self" type="application/atom+xml" />
   <link href="https://cecil.local/" rel="alternate" type="text/html" />
-  <updated>2021-06-21T01:42:30+02:00</updated>
+  <updated>2021-06-21T01:51:57+02:00</updated>
   <author>
     <name>Arnaud Ligny</name>
     <uri>https://arnaudligny.fr</uri>
@@ -19,7 +19,7 @@
 <p><a href="../">back</a></p>]]>
     </content>
     <link href="https://cecil.local/another-page/" rel="alternate" type="text/html" />
-    <published>2021-06-21T01:42:30+02:00</published>
-    <updated>2021-06-21T01:42:30+02:00</updated>
+    <published>2021-06-21T01:51:57+02:00</published>
+    <updated>2021-06-21T01:51:57+02:00</updated>
   </entry>
 </feed>
