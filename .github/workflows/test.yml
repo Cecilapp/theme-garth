@@ -20,6 +20,7 @@ jobs:
     - name: Add theme
       run: |
         echo -e "theme:\n  - garth" >> demo/config.yml
+        echo -e "baseurl: https://cecilapp.github.io/theme-garth/" >> demo/config.yml
         cat demo/config.yml
 
     - name: Build demo
