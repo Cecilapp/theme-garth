@@ -11,7 +11,8 @@ jobs:
       run: curl -sSOL https://cecil.app/cecil.phar
 
     - uses: actions/checkout@master
-      path: 'themes/garth'
+      with:
+        path: 'themes/garth'
 
     - name: Add theme
       run: echo -e "theme:\n  - garth" >> config.yml
