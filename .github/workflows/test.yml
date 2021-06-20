@@ -7,18 +7,17 @@ jobs:
     name: Test theme
     runs-on: ubuntu-18.04
     steps:
-    - name: Download Cecil
-      run: curl -sSOL https://cecil.app/cecil.phar
-
+    - name: Create demo site
+      run: php cecil.phar new:site demo
+      
     - uses: actions/checkout@master
       with:
-        path: 'themes/garth'
-
-    - name: Create demo
-      run: php cecil.phar new:site demo
+        path: 'demo/themes/garth'
     
     - name: Add theme
       run: echo -e "theme:\n  - garth" >> demo/config.yml
 
     - name: Build demo
-      run: php cecil.phar build -vv demo
+      run: |
+        curl -sSOL https://cecil.app/cecil.phar
+        php cecil.phar build -vv demo
