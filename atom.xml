@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://cecil.local/</id>
+  <title>Cecil</title>
+  <subtitle><![CDATA[Cecil is a CLI application that merges plain text files (written in Markdown), images and Twig templates to generate a static website.]]></subtitle>
+  <link href="https://cecil.local/atom.xml" rel="self" type="application/atom+xml" />
+  <link href="https://cecil.local/" rel="alternate" type="text/html" />
+  <updated>2021-06-21T01:42:30+02:00</updated>
+  <author>
+    <name>Arnaud Ligny</name>
+    <uri>https://arnaudligny.fr</uri>
+  </author>
+  <entry xml:lang="en">
+    <id>https://cecil.local/another-page/</id>
+    <title>Another page</title>
+    <content type="html">
+      <![CDATA[<h2>Welcome to another page</h2>
+<p><em>yay</em></p>
+<p><a href="../">back</a></p>]]>
+    </content>
+    <link href="https://cecil.local/another-page/" rel="alternate" type="text/html" />
+    <published>2021-06-21T01:42:30+02:00</published>
+    <updated>2021-06-21T01:42:30+02:00</updated>
+  </entry>
+</feed>
