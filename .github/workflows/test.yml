@@ -23,7 +23,9 @@ jobs:
         cat demo/config.yml
 
     - name: Change baseurl
-      run: export CECIL_BASEURL="https://cecilapp.github.io/theme-garth/"
+      run: |
+        export CECIL_BASEURL="https://cecilapp.github.io/theme-garth/"
+        echo $CECIL_BASEURL
 
     - name: Build demo
       run: php cecil.phar build -vv demo
