@@ -20,4 +20,4 @@ jobs:
     - name: Build demo
       run: |
         php cecil.phar new:site demo
-        php cecil.phar build demo
+        php cecil.phar build -vv demo
