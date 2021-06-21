@@ -22,13 +22,10 @@ jobs:
         echo -e "theme:\n  - garth" >> demo/config.yml
         cat demo/config.yml
 
-    - name: Change baseurl
-      run: |
-        export CECIL_BASEURL="https://cecilapp.github.io/theme-garth/"
-        echo $CECIL_BASEURL
-
     - name: Build demo
       run: php cecil.phar build -vv demo
+      env:
+        CECIL_BASEURL: https://cecilapp.github.io/theme-garth/
 
     - name: Deploy
       uses: Cecilapp/GitHub-Pages-deploy@v3
