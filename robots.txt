@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /404.html
-Sitemap: https://cecil.local/sitemap.xml
+Sitemap: https://cecilapp.github.io/theme-garth/sitemap.xml
