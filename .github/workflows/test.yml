@@ -26,6 +26,7 @@ jobs:
       run: php cecil.phar build -vv demo
       env:
         CECIL_BASEURL: https://cecilapp.github.io/theme-garth/
+        CECIL_CANONICALURL: true
 
     - name: Deploy
       uses: Cecilapp/GitHub-Pages-deploy@v3
