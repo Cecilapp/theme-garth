@@ -6,6 +6,8 @@ jobs:
   test-theme:
     name: Test theme
     runs-on: ubuntu-18.04
+    env:
+      CECIL_BASEURL: 'https://cecilapp.github.io/theme-garth/'
     steps:
     - name: Download Cecil
       run: curl -sSOL https://cecil.app/cecil.phar
@@ -26,7 +28,6 @@ jobs:
     - name: Build demo
       run: php cecil.phar build -vv demo
       env:
-        CECIL_BASEURL: 'https://cecilapp.github.io/theme-garth/'
         CECIL_CANONICALURL: 'true'
 
     - name: Deploy
