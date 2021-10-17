@@ -9,10 +9,10 @@
           <ul class="list list--posts">
             {%- for post in pages ~%}
             <li class="item item--post">
-              {%- include 'partials/post-item.html.twig' with {'post': post} only ~%}
+              {%~ include 'partials/post-item.html.twig' with {'post': post} only ~%}
             </li>
             {%- endfor ~%}
           </ul>
-          {%- include 'partials/pagination.html.twig' ~%}
+          {%~ include 'partials/pagination.html.twig' ~%}
         </section>
 {% endblock content %}
