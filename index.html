@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Cecil &middot; Your content driven static site generator.</title>
     <meta name="description" content="Cecil is a CLI application that merges plain text files (written in Markdown), images and Twig templates to generate a static website." />
     <meta name="author" content="Arnaud Ligny" />
+    <meta name="robots" content="index,follow" />
     <link rel="canonical" type="text/html" title="Cecil &middot; Your content driven static site generator." href="https://cecilapp.github.io/theme-garth/" />
     <link rel="alternate" type="application/atom+xml" title="Cecil &middot; Your content driven static site generator. (ATOM)" href="https://cecilapp.github.io/theme-garth/atom.xml" />
     <meta property="og:locale" content="en_US" />
@@ -19,7 +21,7 @@
     <meta name="twitter:card" content="summary" />
     <link rel="stylesheet" href="https://cecilapp.github.io/theme-garth/css/garth.e83f873d735b7b1e43d9c47ecd5e9140.min.css">
     <link rel="shortcut icon" href="https://cecilapp.github.io/theme-garth/logo.svg">
-    <meta name="generator" content="Cecil 5.53.1" />
+    <meta name="generator" content="Cecil 5.59.3" />
   </head>
   <body>
     <header class="header">
@@ -48,14 +50,12 @@
   <p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
 <p><a href="another-page/">Link to another page</a>.</p>
 <p>There should be whitespace between paragraphs.</p>
-<h1>Header 1</h1>
-<p>This is a normal paragraph following a header.</p>
-<h2>Header 2</h2>
+<h2 id="header-2">Header 2</h2>
 <blockquote>
 <p>This is a blockquote following a header.</p>
 <p>When something is important enough, you do it even if the odds are not in your favor.</p>
 </blockquote>
-<h3>Header 3</h3>
+<h3 id="header-3">Header 3</h3>
 <pre><code class="language-php">// PHP code
 Cecil::create(
     [
@@ -63,19 +63,19 @@ Cecil::create(
         'baseurl' =&gt; 'http://localhost:8000/',
     ]
 )-&gt;build();</code></pre>
-<h4>Header 4</h4>
+<h4 id="header-4">Header 4</h4>
 <ul>
 <li>This is an unordered list following a header.</li>
 <li>This is an unordered list following a header.</li>
 <li>This is an unordered list following a header.</li>
 </ul>
-<h5>Header 5</h5>
+<h5 id="header-5">Header 5</h5>
 <ol>
 <li>This is an ordered list following a header.</li>
 <li>This is an ordered list following a header.</li>
 <li>This is an ordered list following a header.</li>
 </ol>
-<h6>Header 6</h6>
+<h6 id="header-6">Header 6</h6>
 <table>
 <thead>
 <tr>
@@ -107,23 +107,23 @@ Cecil::create(
 </tr>
 </tbody>
 </table>
-<h3>There's a horizontal rule below this.</h3>
+<h3 id="there-s-a-horizontal-rule-below-this">There's a horizontal rule below this</h3>
 <hr />
-<h3>Here is an unordered list:</h3>
+<h3 id="here-is-an-unordered-list">Here is an unordered list</h3>
 <ul>
 <li>Item foo</li>
 <li>Item bar</li>
 <li>Item baz</li>
 <li>Item zip</li>
 </ul>
-<h3>And an ordered list:</h3>
+<h3 id="and-an-ordered-list">And an ordered list</h3>
 <ol>
 <li>Item one</li>
 <li>Item two</li>
 <li>Item three</li>
 <li>Item four</li>
 </ol>
-<h3>And a nested list:</h3>
+<h3 id="and-a-nested-list">And a nested list</h3>
 <ul>
 <li>level 1 item
 <ul>
@@ -145,22 +145,21 @@ Cecil::create(
 </ul></li>
 <li>level 1 item</li>
 </ul>
-<h3>Small image</h3>
+<h3 id="small-image">Small image</h3>
 <p><img src="https://github.githubassets.com/images/icons/emoji/octocat.png" alt="Octocat" width="64" loading="lazy" /></p>
-<h3>Large image</h3>
+<h3 id="large-image">Large image</h3>
 <p><img src="https://guides.github.com/activities/hello-world/branching.png" alt="Branching" width="2098" loading="lazy" /></p>
-<h3>Definition lists can be used with HTML syntax.</h3>
-<dl><dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
+<h3 id="definition-lists">Definition lists</h3>
+<dl>
+<dt>First Term</dt>
+<dd>This is the definition of the first term.</dd>
+<dt>Second Term</dt>
+<dd>This is one definition of the second term.</dd>
+<dd>This is another definition of the second term.</dd>
 </dl>
-<pre><code>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.</code></pre>
-<pre><code>The final element.</code></pre>
+<h3 id="code-blocks">Code blocks</h3>
+<pre><code class="language-text">Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.</code></pre>
+<pre><code class="language-text">The final element.</code></pre>
 </article>
         <section class="lastposts typeset">
           <h2>Recent posts</h2>
@@ -173,7 +172,7 @@ Cecil::create(
     <footer class="footer">
       <div class="container">
         <div class="copyright typeset">
-          <small class="small">&copy; Cecil 2021&nbsp;·&nbsp;Made with <a href="https://cecil.app/#5.53.1">Cecil</a> &amp; <a href="https://github.com/Cecilapp/theme-garth#readme">Garth</a></small>
+          <small class="small">&copy; Cecil 2021&nbsp;·&nbsp;Made with <a href="https://cecil.app/#5.59.3">Cecil</a> &amp; <a href="https://github.com/Cecilapp/theme-garth#readme">Garth</a></small>
         </div>
       </div>
     </footer>
