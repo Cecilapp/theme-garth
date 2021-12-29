@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {%~ include 'partials/metatags.html.twig' ~%}
-    <link rel="stylesheet" href="{{ asset('sass/garth.scss') }}">
+    <link rel="stylesheet" href="{{ asset('sass/garth.scss')|url }}">
     {%- if site.favicon|default(false) ~%}
-    <link rel="shortcut icon" href="{{ asset(site.favicon) }}">
+    <link rel="shortcut icon" href="{{ asset(site.favicon)|url }}">
     {%- else ~%}
-    <link rel="shortcut icon" href="{{ asset(site.logo|default('')) }}">
+    <link rel="shortcut icon" href="{{ asset(site.logo|default(''))|url }}">
     {%- endif ~%}
     {%- endblock head ~%}
   </head>
@@ -27,8 +27,8 @@
     </main>
     {%- block footer ~%}
     {%~ include 'partials/site-footer.html.twig' ~%}
-    <link href="{{ asset('google-fonts-1597441858876.css') }}" rel="stylesheet">
-    <link href="{{ asset('google-fonts-1597441908439.css') }}" rel="stylesheet">
+    <link href="{{ asset('google-fonts-1597441858876.css')|url }}" rel="stylesheet">
+    <link href="{{ asset('google-fonts-1597441908439.css')|url }}" rel="stylesheet">
     {%~ include 'partials/googleanalytics.js.twig' ~%}
     {%- endblock footer ~%}
   </body>
