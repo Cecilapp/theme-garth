@@ -5,9 +5,13 @@ on: push
 jobs:
   test-theme:
     name: Test theme
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     env:
-      CECIL_BASEURL: 'https://cecilapp.github.io/theme-garth/'
+      CECIL_BASEURL: https://cecilapp.github.io/theme-garth/
+      CECIL_CANONICALURL: true
+    environment: 
+      name: github-pages
+      url: ${{ steps.deploy_url.outputs.url }}
     steps:
     - name: Download Cecil
       run: curl -sSOL https://cecil.app/cecil.phar
@@ -15,20 +19,18 @@ jobs:
     - name: Create demo site
       run: php cecil.phar new:site demo
 
-    - uses: actions/checkout@master
+    - name: Install theme
+      uses: actions/checkout@master
       with:
-        path: 'demo/themes/garth'
+        path: demo/themes/garth
 
     - name: Add theme
       run: |
         echo -e "theme:\n  - garth" >> demo/config.yml
-        cat demo/config.yml
         rm -rf demo/layouts
 
     - name: Build demo
       run: php cecil.phar build -vv demo
-      env:
-        CECIL_CANONICALURL: 'true'
 
     - name: Deploy
       uses: Cecilapp/GitHub-Pages-deploy@v3
@@ -37,3 +39,8 @@ jobs:
       with:
         email: arnaud@ligny.org
         build_dir: demo/_site
+
+    - name: Deploy URL
+      if: ${{ success() }}
+      id: deploy_url
+      run: echo "::set-output name=url::$CECIL_BASEURL"
