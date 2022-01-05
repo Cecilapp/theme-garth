@@ -27,8 +27,9 @@
     </main>
     {%- block footer ~%}
     {%~ include 'partials/site-footer.html.twig' ~%}
-    <link href="{{ asset('google-fonts-1597441858876.css')|url }}" rel="stylesheet">
-    <link href="{{ asset('google-fonts-1597441908439.css')|url }}" rel="stylesheet">
+    {#<link href="{{ asset('google-fonts-1597441858876.css')|url }}" rel="stylesheet">
+    <link href="{{ asset('google-fonts-1597441908439.css')|url }}" rel="stylesheet">~#}
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Neuton:400,700" rel="stylesheet">
     {%~ include 'partials/googleanalytics.js.twig' ~%}
     {%- endblock footer ~%}
   </body>
