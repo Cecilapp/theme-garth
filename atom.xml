@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://cecilapp.github.io/theme-garth/</id>
   <title>Cecil</title>
-  <subtitle><![CDATA[Cecil is a CLI application, powered by PHP, that merge plain text files (written in Markdown), images and Twig templates to generate a static website.]]></subtitle>
+  <subtitle><![CDATA[Site description]]></subtitle>
   <link href="https://cecilapp.github.io/theme-garth/atom.xml" rel="self" type="application/atom+xml" />
   <link href="https://cecilapp.github.io/theme-garth/" rel="alternate" type="text/html" />
-  <updated>2022-01-05T01:34:49+01:00</updated>
+  <updated>2022-05-26T18:32:52+00:00</updated>
   <author>
     <name>Arnaud Ligny</name>
     <uri>https://arnaudligny.fr</uri>
@@ -14,11 +14,11 @@
     <id>https://cecilapp.github.io/theme-garth/another-page/</id>
     <title>Another page</title>
     <content type="html">
-      <![CDATA[<h2 id="">Welcome to another page</h2>
+      <![CDATA[<h2 id="welcome-to-another-page">Welcome to another page</h2>
 <p><a href="../">back</a></p>]]>
     </content>
     <link href="https://cecilapp.github.io/theme-garth/another-page/" rel="alternate" type="text/html" />
-    <published>2022-01-05T01:34:49+01:00</published>
-    <updated>2022-01-05T01:34:49+01:00</updated>
+    <published>2022-05-26T18:32:52+00:00</published>
+    <updated>2022-05-26T18:32:52+00:00</updated>
   </entry>
 </feed>
