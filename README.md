@@ -2,7 +2,7 @@
 
 > The _Garth_ theme for [Cecil](https://cecil.app) is a port of the [Garth](https://github.com/daviddarnes/garth) theme for Jekyll created by [David Darnes](https://github.com/daviddarnes).
 
-![Demo screenshot](https://raw.githubusercontent.com/daviddarnes/garth/master/screenshot.png)
+![Demo screenshot](docs/screenshot.png)
 
 ## Installation
 
