@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="https://cecilapp.github.io/theme-garth/atom.xsl" media="all"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://cecilapp.github.io/theme-garth/</id>
   <title>Cecil</title>
   <subtitle><![CDATA[Site description]]></subtitle>
   <link href="https://cecilapp.github.io/theme-garth/atom.xml" rel="self" type="application/atom+xml" />
   <link href="https://cecilapp.github.io/theme-garth/" rel="alternate" type="text/html" />
-  <updated>2022-05-27T00:05:44+00:00</updated>
+  <updated>2022-09-01T18:23:29+00:00</updated>
   <author>
     <name>Arnaud Ligny</name>
     <uri>https://arnaudligny.fr</uri>
@@ -18,7 +19,7 @@
 <p><a href="../">back</a></p>]]>
     </content>
     <link href="https://cecilapp.github.io/theme-garth/another-page/" rel="alternate" type="text/html" />
-    <published>2022-05-27T00:05:44+00:00</published>
-    <updated>2022-05-27T00:05:44+00:00</updated>
+    <published>2022-09-01T18:23:29+00:00</published>
+    <updated>2022-09-01T18:23:29+00:00</updated>
   </entry>
 </feed>
