@@ -9,5 +9,5 @@
 {% endif %}
                 <small class="small post-meta">
                   {%~ if category is defined is not empty %}{{ category ~ "&nbsp;&middot;&nbsp;" -}}{% endif ~%}
-                  <time datetime="{{ post.date|date('c') }}" class="time">{{ post.date|date("j M Y") }}</time>
+                  <time datetime="{{ post.date|date('c') }}" class="time">{{ post.date|format_date('long') }}</time>
                 </small>

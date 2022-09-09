@@ -8,7 +8,10 @@
     <footer class="footer">
       <div class="container">
         <div class="copyright typeset">
-          <small class="small">&copy; {{ site.copyright|default(site.title) }} {{ site.time|date('Y') }}&nbsp;·&nbsp;Made with <a href="{{ cecil.url }}">Cecil</a> &amp; <a href="https://github.com/Cecilapp/theme-garth#readme">Garth</a>{% if menu is defined %}{{ menu }}{% endif %}</small>
+          {%- set made_with -%}
+            <a href="{{ cecil.url }}">Cecil</a> &amp; <a href="https://github.com/Cecilapp/theme-garth#readme">Garth</a>{% if menu is defined %}{{ menu }}{% endif %}
+          {%- endset ~%}
+          <small class="small">&copy; {{ site.copyright|default(site.title) }} {{ site.time|date('Y') }}&nbsp;·&nbsp;{% trans %}Made with %made_with%{% endtrans %}</small>
         </div>
       </div>
     </footer>
