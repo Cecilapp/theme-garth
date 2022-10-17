@@ -2,14 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cecilapp.github.io/theme-garth/another-page/</loc>
-    <lastmod>2022-09-09</lastmod>
+    <loc>https://cecilapp.github.io/theme-garth/about/</loc>
+    <lastmod>2022-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cecilapp.github.io/theme-garth/</loc>
-    <lastmod>2022-09-09</lastmod>
+    <lastmod>2022-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cecilapp.github.io/theme-garth/markdown/</loc>
+    <lastmod>2022-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cecilapp.github.io/theme-garth/blog/post-6/</loc>
+    <lastmod>2022-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cecilapp.github.io/theme-garth/blog/post-5/</loc>
+    <lastmod>2022-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cecilapp.github.io/theme-garth/blog/post-4/</loc>
+    <lastmod>2022-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cecilapp.github.io/theme-garth/blog/post-3/</loc>
+    <lastmod>2022-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cecilapp.github.io/theme-garth/blog/post-2/</loc>
+    <lastmod>2022-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cecilapp.github.io/theme-garth/blog/post-1/</loc>
+    <lastmod>2022-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
