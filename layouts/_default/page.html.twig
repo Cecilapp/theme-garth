@@ -12,6 +12,14 @@
     <link rel="shortcut icon" href="{{ asset(site.logo|default(''))|url }}">
     {%- endif ~%}
     {%- endblock head ~%}
+    {#<link href="{{ asset('google-fonts-1597441858876.css')|url }}" rel="stylesheet">
+    <link href="{{ asset('google-fonts-1597441908439.css')|url }}" rel="stylesheet">~#}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Neuton:400,700&display=swap">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Neuton:400,700&display=swap">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Neuton:400,700&display=swap">
+    </noscript>
   </head>
   <body>
     {%~ include 'partials/site-header.html.twig' ~%}
@@ -27,9 +35,6 @@
     </main>
     {%- block footer ~%}
     {%~ include 'partials/site-footer.html.twig' ~%}
-    {#<link href="{{ asset('google-fonts-1597441858876.css')|url }}" rel="stylesheet">
-    <link href="{{ asset('google-fonts-1597441908439.css')|url }}" rel="stylesheet">~#}
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Neuton:400,700" rel="stylesheet">
     {%~ include 'partials/googleanalytics.js.twig' ~%}
     {%- endblock footer ~%}
   </body>
