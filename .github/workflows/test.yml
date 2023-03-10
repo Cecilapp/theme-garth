@@ -1,48 +1,61 @@
-name: Test
+name: Test and build demo
 
-on: push
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
-  test-theme:
-    name: Test theme
+  build:
     runs-on: ubuntu-latest
     env:
       CECIL_BASEURL: https://cecilapp.github.io/theme-garth/
       CECIL_CANONICALURL: true
-    environment: 
-      name: github-pages
-      url: ${{ steps.deploy_url.outputs.url }}
     steps:
-    - name: Download Cecil
-      run: |
-        curl -sSOL https://cecil.app/cecil.phar
-        php cecil.phar --version
+      - name: Download Cecil
+        run: |
+          curl -sSOL https://cecil.app/cecil.phar
+          php cecil.phar --version
 
-    - name: Create demo site
-      run: php cecil.phar new:site demo
+      - name: Create site
+        run: |
+          php cecil.phar new:site -n
 
-    - name: Install theme
-      uses: actions/checkout@master
-      with:
-        path: demo/themes/garth
+      - name: Install theme
+        uses: actions/checkout@master
+        with:
+          path: ./themes/hyde
 
-    - name: Add theme
-      run: |
-        echo -e "theme:\n  - garth" >> demo/config.yml
-        rm -rf demo/layouts
+      - name: Add theme to configuration file
+        run: |
+          echo -e "theme:\n  - garth" >> ./config.yml
+          rm -rf ./layouts
 
-    - name: Build
-      run: php cecil.phar build -vv demo
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
 
-    - name: Deploy
-      uses: Cecilapp/GitHub-Pages-deploy@v3
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        email: arnaud@ligny.org
-        build_dir: demo/_site
+      - name: Build site
+        run: php cecil.phar build -vv
 
-    - name: Deploy URL
-      if: ${{ success() }}
-      id: deploy_url
-      run: echo "::set-output name=url::$CECIL_BASEURL"
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
