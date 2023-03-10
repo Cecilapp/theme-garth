@@ -33,7 +33,7 @@ jobs:
       - name: Install theme
         uses: actions/checkout@master
         with:
-          path: ./themes/hyde
+          path: ./themes/garth
 
       - name: Add theme to configuration file
         run: |
