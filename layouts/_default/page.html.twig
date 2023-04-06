@@ -2,24 +2,22 @@
 <html lang="{{ site.language|default('en') }}">
   <head>
     {%- block head ~%}
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     {%~ include 'partials/metatags.html.twig' ~%}
     {%- if site.favicon|default(false) ~%}
-    <link rel="shortcut icon" href="{{ asset(site.favicon)|url }}">
+    <link rel="shortcut icon" href="{{ asset(site.favicon)|url }}" />
     {%- else ~%}
-    <link rel="shortcut icon" href="{{ asset(site.logo|default(''))|url }}">
+    <link rel="shortcut icon" href="{{ asset(site.logo|default(''))|url }}" />
     {%- endif ~%}
     <style>
       {{- asset('sass/garth.scss')|inline ~}}
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=Neuton:wght@400;700&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=Neuton:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=Neuton:wght@400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=Neuton:wght@400;700&display=swap" />
     <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=Neuton:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=Neuton:wght@400;700&display=swap" />
     </noscript>
     {%- endblock head ~%}
   </head>
