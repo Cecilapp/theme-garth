@@ -6,7 +6,7 @@
 {% set pages = page.pagination.pages %}
 {% endif %}
 
-{% extends 'page.html.twig' %}
+{% extends ['page.html.twig', '_default/page.html.twig'] %}
 
         {%- block content ~%}
         <section>
