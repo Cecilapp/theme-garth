@@ -1,4 +1,4 @@
-{% extends 'page.html.twig' %}
+{% extends ['page.html.twig', '_default/page.html.twig'] %}
 
 {% if page.image is defined and page.image_header ?? true %}
 {% set image = asset(page.image)|resize(1200) %}
