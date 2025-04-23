@@ -1,6 +1,7 @@
 logo: logo.svg
-pagination:
-  max: 2
+pages:
+  pagination:
+    max: 2
 static:
   exclude:
     - '*.scss'
