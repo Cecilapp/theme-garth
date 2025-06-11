@@ -1,4 +1,6 @@
 logo: logo.svg
+taxonomies:
+  tags: tag
 pages:
   pagination:
     max: 2
