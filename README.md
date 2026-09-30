@@ -1,6 +1,6 @@
 # Garth theme
 
-The _Garth_ theme for [Cecil](https://cecil.app) is a port of the [Garth](https://github.com/daviddarnes/garth) theme for Jekyll created by [David Darnes](https://github.com/daviddarnes).
+_Garth_ is a modern, clean, and responsive theme for [Cecil](https://cecil.app). It is a port of the [Garth](https://github.com/daviddarnes/garth) theme for Jekyll created by [David Darnes](https://github.com/daviddarnes).
 
 ![Demo screenshot](docs/screenshot.png)
 
