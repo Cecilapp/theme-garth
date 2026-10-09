@@ -26,19 +26,14 @@ jobs:
           curl -sSOL https://cecil.app/cecil.phar
           php cecil.phar --version
 
-      - name: Create site
-        run: |
-          php cecil.phar new:site -n --demo
-
       - name: Install theme
         uses: actions/checkout@v4
         with:
           path: ./themes/garth
 
-      - name: Add theme to configuration file
+      - name: Create site from demo
         run: |
-          echo -e "theme:\n  - garth" >> ./config.yml
-          rm -rf ./layouts
+          cp -r ./themes/garth/demo/. .
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

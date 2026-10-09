@@ -3,3 +3,6 @@
 
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Exclude demo website from archive
+/demo export-ignore

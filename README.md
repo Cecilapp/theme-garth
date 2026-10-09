@@ -40,6 +40,19 @@ assets:
 2. Copy `themes/garth/assets/sass/_colors.scss` to `assets/sass/_colors.scss`
 3. Edit colors in `_colors.scss`
 
+## Demo
+
+The [`demo/`](demo/) folder contains a demo website, built and deployed to [GitHub Pages](https://cecilapp.github.io/theme-garth/).
+
+To preview it locally, link the theme in `demo/themes/garth` then run Cecil:
+
+```bash
+mkdir -p demo/themes && ln -s ../.. demo/themes/garth
+php cecil.phar serve demo
+```
+
+> On Windows: `New-Item -ItemType Junction -Path demo/themes/garth -Target (Get-Location).Path`
+
 ## License
 
 _Garth_ is a free software distributed under the terms of the MIT license.

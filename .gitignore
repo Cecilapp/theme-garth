@@ -1,1 +1,5 @@
 vendor/
+demo/_site/
+demo/.cache/
+demo/themes/
+demo/.cecil/

@@ -1,0 +1,21 @@
+title: Field Notes
+baseline: 'Slow thoughts on walking, reading and making things'
+baseurl: /
+description: 'The personal blog of Alex Morgan: walks, books, coffee and small handmade things.'
+author:
+  name: Alex Morgan
+copyright: Alex Morgan
+image: icon.png
+taxonomies:
+  tags: tag
+pages:
+  pagination:
+    max: 5
+menus:
+  footer:
+    - id: rss
+      name: RSS
+      url: blog/atom.xml
+      weight: 10
+theme:
+  - garth
