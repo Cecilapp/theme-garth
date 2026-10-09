@@ -23,7 +23,7 @@ theme:
 
 ### Change colors
 
-### From configuration
+#### From configuration
 
 ```yaml
 assets:
@@ -34,11 +34,11 @@ assets:
       backgroundColour: '#F1F3F4'
 ```
 
-### From files
+#### From files
 
-1. Copy `themes/garth/static/sass/garth.scss` to `static/sass/garth.scss`
-2. Copy `themes/garth/static/sass/_colors.scss` to `static/sass/_colors.scss`
-3. Edit colors's code in `_colors.scss`
+1. Copy `themes/garth/assets/sass/garth.scss` to `assets/sass/garth.scss`
+2. Copy `themes/garth/assets/sass/_colors.scss` to `assets/sass/_colors.scss`
+3. Edit colors in `_colors.scss`
 
 ## License
 
