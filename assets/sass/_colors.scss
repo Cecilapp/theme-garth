@@ -1,10 +1,10 @@
 // Colours
-$bodyColour: #46412A;
-$headingColour: darken($bodyColour, 5%);
-$linkColour: #5B5BFF;
-$hoverColour: darken($linkColour, 10%);
-$captionColour: lighten($headingColour, 40%);
-$white: #fff;
+$bodyColour: #46412A !default;
+$headingColour: darken($bodyColour, 5%) !default;
+$linkColour: #5B5BFF !default;
+$hoverColour: darken($linkColour, 10%) !default;
+$captionColour: lighten($headingColour, 40%) !default;
+$white: #fff !default;
 
-$backgroundColour: #ffefc8;
-$codeBackgroundColour: darken($backgroundColour, 5%);
+$backgroundColour: #ffefc8 !default;
+$codeBackgroundColour: darken($backgroundColour, 5%) !default;
