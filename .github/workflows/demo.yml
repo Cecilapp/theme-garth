@@ -1,4 +1,4 @@
-name: Test and build demo
+name: Build demo
 
 on:
   push:
@@ -28,10 +28,10 @@ jobs:
 
       - name: Create site
         run: |
-          php cecil.phar new:site -n
+          php cecil.phar new:site -n --demo
 
       - name: Install theme
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
         with:
           path: ./themes/garth
 
