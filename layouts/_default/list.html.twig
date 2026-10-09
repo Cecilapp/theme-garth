@@ -1,9 +1,9 @@
-{% set pages = site.pages.all %}
+{% set pages = site.pages.showable %}
 {% if page.pages is defined %}
 {% set pages = page.pages %}
 {% endif %}
-{% if page.pagination.pages is defined %}
-{% set pages = page.pagination.pages %}
+{% if page.paginator.pages is defined %}
+{% set pages = page.paginator.pages %}
 {% endif %}
 
 {% extends ['page.html.twig', '_default/page.html.twig'] %}
